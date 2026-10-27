@@ -1,0 +1,5 @@
+{
+  "scenario": "submit-homework",
+  "assignmentUrl": "https://lms.astanait.edu.kz/mod/assign/view.php?id=DEMO",
+  "file": "fixtures/homework.txt"
+}
