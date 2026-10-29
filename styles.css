@@ -81,7 +81,6 @@ h1 span { color: #54704b; }
   border-radius: 50%;
   background: linear-gradient(150deg, #494a43, #242520 65%);
   box-shadow: 0 16px 0 #151612, 0 22px 0 #cecabd, 0 48px 40px -12px #24251d40;
-  transform: rotate(-9deg);
 }
 
 .bang {
@@ -101,10 +100,35 @@ h1 span { color: #54704b; }
   transition: transform 140ms ease, box-shadow 140ms ease, filter 140ms ease;
 }
 
-.bang span {
-  font: 900 clamp(42px, 5.3vw, 80px)/1 Arial, Helvetica, sans-serif;
-  letter-spacing: -0.065em;
+.button-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: clamp(8px, 1.2vw, 16px);
+  width: 74%;
+  text-align: center;
+}
+
+.button-language {
+  font: 700 11px/1.2 Arial, Helvetica, sans-serif;
+  letter-spacing: 2px;
+}
+
+.button-title {
+  font: 900 clamp(32px, 4.5vw, 64px)/1 Arial, Helvetica, sans-serif;
+  letter-spacing: -0.06em;
   text-shadow: 0 3px 0 #9a271b55;
+}
+
+.button-description {
+  font: 600 clamp(13px, 1.3vw, 18px)/1.4 Arial, Helvetica, sans-serif;
+  text-wrap: pretty;
+}
+
+.button-hint {
+  font: 700 clamp(10px, 1vw, 12px)/1.3 Arial, Helvetica, sans-serif;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 3px;
 }
 
 @media (hover: hover) { .bang:hover { filter: brightness(1.07); } }
@@ -145,7 +169,8 @@ footer span:last-child { font-size: 24px; }
   main { grid-template-columns: 1fr; gap: 24px; padding: 48px 0 64px; }
   h1 { max-width: 560px; font-size: clamp(45px, 10.4vw, 76px); }
   .product { width: min(100%, 380px); justify-self: center; padding: 24px 16px; }
-  .bang span { font-size: clamp(48px, 13vw, 68px); }
+  .button-title { font-size: clamp(32px, 10vw, 54px); }
+  .button-description { font-size: clamp(12px, 3.4vw, 16px); }
   .button-base { padding: 14px; }
 }
 
